@@ -2,14 +2,16 @@
 
 <title>{% block title %}Create New Task{% endblock title %}</title>
 {% block content %}
-<h1 class="create-task-header">Create a New Task</h1>
-<div>
-    <form action="" method="post">{% csrf_token %}
+<div class="main-flex">
+    <h1 class="CRUD-header">Create a New Task</h1>
+    <form class="form-flex" action="" method="post">{% csrf_token %}
         <ul>
             <li>Title: {{ form.title }}</li>
             <li>Extra Information: {{ form.info }}</li>
         </ul>
-        <input type="submit" value="Create">
+        <div class="end-btn-holder">
+            <input type="submit" value="Create">
+        </div>
     </form>
 </div>
 {% endblock content %}

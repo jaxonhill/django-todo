@@ -65,7 +65,38 @@
     padding-bottom: 10px;
 }
 
-/* .create-task-header {} */
+.main-flex {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 50px 25% 0 25%;
+    border: 3px solid black;
+    border-radius: 9px;
+    padding: 20px;
+}
+
+.form-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+
+.CRUD-header {
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.end-btn-holder {
+    display: flex;
+    justify-content: flex-end;
+}
+
 input {
     padding: 20px 5px;
+}
+
+ul {
+    list-style: none;
 }

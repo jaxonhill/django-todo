@@ -2,6 +2,9 @@
 
 <title>{% block title %}Todo Today{% endblock title %}</title>
 {% block content %}
+<div class="top-links">
+    <p><a href="{% url 'create' %}">Create Task</a></p>
+</div>
 <div class="flex-main">
     <div class="main-content">
         {% for task in task_list %}

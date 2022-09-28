@@ -1,5 +1,10 @@
 from django.shortcuts import render
-from django.views.generic import ListView, CreateView, UpdateView
+from django.views.generic import (
+    ListView,
+    CreateView,
+    UpdateView,
+    DeleteView,
+)
 from .models import Task
 from django.urls import reverse_lazy
 
@@ -26,3 +31,9 @@ class EditTaskPageView(UpdateView):
         "title",
         "info",
     )
+
+
+class DeleteTaskPageView(DeleteView):
+    model = Task
+    template_name = "delete_task_confirmation.html"
+    success_url = "/"

@@ -14,12 +14,13 @@
 
     <body>
         <div class="nav">
-            <h1>TODO List</h1>
+            <h1><a href="{% url 'home' %}" class="no-decorate">TODO List</a></h1>
         </div>
-        <div class="flex-main">
-            {% block content %}
-            {% endblock content %}
+        <div class="top-links">
+            <p><a href="{% url 'create' %}">Create Task</a></p>
         </div>
+        {% block content %}
+        {% endblock content %}
     </body>
 
 </html>

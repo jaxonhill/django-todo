@@ -2,14 +2,19 @@
 
 <title>{% block title %}Todo Today{% endblock title %}</title>
 {% block content %}
-<div class="main-content">
-    {% for task in task_list %}
-    <div class="task-div">
-        <div class="task-head">
-            <h2>{{ task.title }}</h2>
+<div class="flex-main">
+    <div class="main-content">
+        {% for task in task_list %}
+        <div class="task-div">
+            <div class="task-head">
+                <h2>{{ task.title }}</h2>
+            </div>
+            <p>{{ task.info }}</p>
+            <div class="card-bottom-bar">
+                <p><a href="#">Edit</a> | <a href="#">Delete</a></p>
+            </div>
         </div>
-        <p>{{ task.info }}</p>
+        {% endfor %}
     </div>
-    {% endfor %}
 </div>
 {% endblock content %}

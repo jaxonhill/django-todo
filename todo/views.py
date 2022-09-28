@@ -7,3 +7,12 @@ from .models import Task
 class HomePageView(ListView):
     model = Task
     template_name = "home.html"
+
+
+class CreateTaskPageView(CreateView):
+    model = Task
+    template_name = "create_task.html"
+    fields = (
+        "title",
+        "info",
+    )

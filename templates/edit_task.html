@@ -2,14 +2,22 @@
 
 <title>{% block title %}Edit Task{% endblock title %}</title>
 {% block content %}
-<h1>Edit Task</h1>
-<div>
-    <form action="" method="post">{% csrf_token %}
-        <ul>
-            <li>Edit Title: {{ form.title }}</li>
-            <li>Edit Extra Info: {{ form.info }}</li>
+<div class="main-flex">
+    <h1 class="CRUD-header">Edit Task</h1>
+    <form action="" method="post" class="form-flex">{% csrf_token %}
+        <ul class="ul-holder">
+            <div class="form-section">
+                <li class="description">Edit Title</li>
+                <li>{{ form.title }}</li>
+            </div>
+            <div class="form-section">
+                <li class="description">Edit Extra Info</li>
+                <li>{{ form.info }}</li>
+            </div>
         </ul>
-        <input type="submit" value="Make Changes">
+        <div class="end-btn-holder">
+            <input type="submit" value="Make Changes" class="success">
+        </div>
     </form>
 </div>
 {% endblock content %}

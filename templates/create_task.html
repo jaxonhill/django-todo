@@ -5,12 +5,18 @@
 <div class="main-flex">
     <h1 class="CRUD-header">Create a New Task</h1>
     <form class="form-flex" action="" method="post">{% csrf_token %}
-        <ul>
-            <li>Title: {{ form.title }}</li>
-            <li>Extra Information: {{ form.info }}</li>
+        <ul class="ul-holder">
+            <div class="form-section">
+                <li class="description">Title</li>
+                <li>{{ form.title }}</li>
+            </div>
+            <div class="form-section">
+                <li class="description">Extra Information</li>
+                <li>{{ form.info }}</li>
+            </div>
         </ul>
         <div class="end-btn-holder">
-            <input type="submit" value="Create">
+            <input type="submit" value="Create" class="success">
         </div>
     </form>
 </div>

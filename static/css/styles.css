@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap');
 
 * {
     margin: 0;
@@ -15,7 +15,7 @@
 .nav h1 {
     font-weight: 900;
     font-size: 48px;
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     margin-top: 20px;
     margin-bottom: 10px;
 }
@@ -83,7 +83,7 @@
 }
 
 .CRUD-header {
-    border-bottom: 1px solid black;
+    border-bottom: 3px solid black;
     padding-bottom: 5px;
     margin-bottom: 20px;
 }
@@ -93,10 +93,49 @@
     justify-content: flex-end;
 }
 
-input {
-    padding: 20px 5px;
+.ul-holder {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-ul {
-    list-style: none;
+.form-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0 0 3px 5px;
+}
+
+input,
+textarea {
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+input {
+    width: 35%;
+}
+
+textarea {
+    width: 50%;
+}
+
+.success {
+    width: auto;
+    padding: 20px 20px;
+    background-color: #00AB66;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+.success:hover {
+    /* background-color: #049D5F; */
+    background-color: #059058;
 }

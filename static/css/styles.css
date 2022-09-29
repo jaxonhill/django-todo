@@ -136,6 +136,17 @@ textarea {
 }
 
 .success:hover {
-    /* background-color: #049D5F; */
     background-color: #059058;
+}
+
+.delete {
+    width: auto;
+    padding: 20px 20px;
+    background-color: #E92E40;
+    font-weight: bold;
+    border: 3px solid black;
+}
+
+.delete:hover {
+    background-color: #D12E3D;
 }
